@@ -1,7 +1,16 @@
 import React from 'react';
-const Session = () => (
-  <div>
-    <h1>Session</h1>
-  </div>
+
+
+import AuthUserContext from './context';
+import withAuthentication from './withAuthentication';
+import withAuthorization from './withAuthorization';
+
+const AccountPage = () => (
+  <AuthUserContext.Consumer>
+    
+  </AuthUserContext.Consumer>
 );
-export default Session;
+
+const authCondition = authUser => !!authUser;
+
+export { AuthUserContext, withAuthentication, withAuthorization };
