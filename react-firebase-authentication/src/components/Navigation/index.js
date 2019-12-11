@@ -23,6 +23,7 @@ const NavigationAuth = () => (
     </li>
   </ul>
 );
+
 const NavigationNonAuth = () => (
   <ul>
     <li>

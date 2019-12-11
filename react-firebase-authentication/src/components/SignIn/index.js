@@ -20,6 +20,7 @@ const INITIAL_STATE = {
   password: '',
   error: null,
 };
+
 class SignInFormBase extends Component {
   constructor(props) {
     super(props);
